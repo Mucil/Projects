@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2B5CD"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#000000"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+               >
+                  <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD PRODUCT"
+                    android:textColor="#FF1493"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/gradient_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="select product image"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#EE7600"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/pimage"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.81"
+                    android:src="@drawable/cam" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A2B5CD"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name"
+                        android:textColor="#0000FF"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_pname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/arrow"
+                        android:alpha="0.5"
+                        android:ems="10"
+                        android:hint="HP NoteBook 1500" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unit Price"
+                        android:textColor="#0000FF"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_pprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/arrow"
+                        android:alpha="0.5"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="Ksh 24000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textColor="#0000FF"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_pdescrption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:ems="10"
+                        android:drawableLeft="@drawable/arrow"
+                        android:hint="core i5,500GB hdd, 2GB RAM" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textColor="#0000FF"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/sp_pcategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:alpha="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal" >
+
+                    <Button
+                        android:id="@+id/pupload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:background="@drawable/btn_style"
+                        android:text="Upload"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

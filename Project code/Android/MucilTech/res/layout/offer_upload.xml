@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/offerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#FFD700"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/offerIPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Initial price"
+                    android:textColor="#FFD700"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/offerID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offer id"
+                    android:visibility="invisible"
+                    android:textColor="#FFD700"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <EditText
+                    android:id="@+id/offerCPrice"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/right_a"
+                    android:hint="New price"
+                    android:inputType="number"
+                    android:textColorHint="#FF1493" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9D3EE"
+    android:orientation="vertical" >   
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical" >
+
+     <EditText
+         android:id="@+id/etSearchOffer"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:drawableLeft="@drawable/search"
+         android:hint="Search products.."
+         android:ems="10" >
+         
+
+         <requestFocus />
+     </EditText>
+
+    <ListView        
+        android:id="@+id/lvOffersWithdraw"
+        android:layout_width="match_parent"
+        android:divider="#836FFF"
+        android:dividerHeight="5dp"
+        android:layout_height="wrap_content" >
+    </ListView>
+        </LinearLayout>
+    
+
+</LinearLayout>

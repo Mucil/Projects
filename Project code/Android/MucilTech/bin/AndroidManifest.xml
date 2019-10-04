@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mucil.developers"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <!-- Internet Access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.mucil.developers.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mucil.developers.Product_UploadActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.Details"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.ResetActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.AuthorityActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.Product_ReviewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.Review"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.Branch_UploadActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.Review_Branch"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.OrdersActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.SalesActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.OffersUpload"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.mucil.developers.OffersWithdraw"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

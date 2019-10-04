@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    
+<item android:drawable="@drawable/comp6" android:duration="2000"></item>
+<item android:drawable="@drawable/comp5" android:duration="2000"></item>
+<item android:drawable="@drawable/comp9" android:duration="2000"></item>
+<item android:drawable="@drawable/comp14" android:duration="2000"></item>
+<item android:drawable="@drawable/comp17" android:duration="2000"></item>
+<item android:drawable="@drawable/comp18" android:duration="2000"></item>
+
+</animation-list>

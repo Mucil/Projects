@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96d0de"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/gradient_bg2"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User ID"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/et_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:drawableLeft="@drawable/right_a"
+                        android:ems="10"
+                        android:hint="*National identicafion*"
+                        android:inputType="number"
+                        android:maxLength="8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Names"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/et_names"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHI JKLMNOPQRSTUVWXYZ"
+                        android:drawableLeft="@drawable/right_a"
+                        android:ems="10"
+                        android:hint="*Mushila Hamphrey Lijodi*" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descriptive address"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/et_descriptive_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:drawableLeft="@drawable/right_a"
+                        android:ems="10"
+                        android:hint="Descriptive address" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone no"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/et_phone_no"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:drawableLeft="@drawable/right_a"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:ems="10"
+                        android:hint="0790959933" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Region"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <Spinner
+                        android:id="@+id/sp_region"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:alpha="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/linearLayout5"
+                    android:layout_alignParentLeft="true"
+                    android:background="#00000000" >
+
+                    <Button
+                        android:id="@+id/register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:background="@drawable/btn_style"
+                        android:text="Register"
+                        android:textColor="#7CFC00"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/reset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:background="@drawable/btn_style"
+                        android:text="Reset Details"
+                        android:textColor="#B0171F"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

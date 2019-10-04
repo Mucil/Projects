@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/order_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/user"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/order_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/order_identification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_stroke2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"      
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/order_receiptcontents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="receipt contents"
+                    android:textColor="#00008B"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     "
+                    android:textColor="#00008B"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/order_receiptquantities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="receipt quantities"
+                    android:textColor="#00008B"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ksh "
+                    android:textColor="#FF1493"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/order_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="total"
+                    android:textColor="#FF1493" 
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

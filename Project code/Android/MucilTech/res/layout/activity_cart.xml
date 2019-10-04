@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EED5D2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ListView
+            android:id="@+id/listViewCart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@drawable/zigzag"
+            android:dividerHeight="10dp" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/no_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Oops ! No items"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/btnPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_style"
+            android:text="Place"
+            android:textColor="#FF1493"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

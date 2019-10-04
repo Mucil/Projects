@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2B5CD"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#AB82FF"
+                android:gravity="center"
+                android:text="Reset Details"
+                android:textColor="#0000FF"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFC0CB"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="15dp" >
+
+                <EditText
+                    android:id="@+id/customer_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/topbar_bg_textview"
+                    android:drawableLeft="@drawable/next"
+                    android:hint="Identification"
+                    android:inputType="number"
+                    android:maxLength="8" />
+
+                <Button
+                    android:id="@+id/customer_load"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:background="@drawable/btn_style"
+                    android:text="Load"
+                    android:textColor="#008B00"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_bg2"
+                android:orientation="vertical"
+                android:paddingBottom="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Names"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/customer_names"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/arrow"
+                    android:hint="Names"
+                    android:textColorHint="#FF1493" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descriptive address"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/customer_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/arrow"
+                    android:hint="Address"
+                    android:textColorHint="#FF1493" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone no"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/customer_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/arrow"
+                    android:hint="Phone no"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColorHint="#FF1493" />
+
+                <Spinner
+                    android:id="@+id/customer_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:alpha="0.5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/gradient_bg2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/customer_reset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:background="@drawable/btn_style"
+                        android:text="Reset"
+                        android:textColor="#B0171F"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

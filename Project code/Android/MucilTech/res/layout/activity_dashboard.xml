@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#96d0de"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                     >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFEC8B"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/header"
+                    android:drawableRight="@drawable/header"
+                    android:text="  MUCILTECH  "
+                    android:textAlignment="center"
+                    android:textColor="#CD1076"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                     >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/comp11"
+                     >
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+
+            </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#AB82FF"
+                    android:onClick="onNew" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/open84"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="New"
+                        android:textColor="#4B0082"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="120dp" />
+
+                <RelativeLayout
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#FFC0CB"
+                    android:onClick="onOffers" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/offers"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="Offers"
+                        android:textColor="#4B0082"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <RelativeLayout
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFC0CB"
+                    android:onClick="onAboutUs" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/aboutus"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="About Us"
+                        android:textColor="#4B0082"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="120dp" />
+
+                <RelativeLayout
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#AB82FF"
+                    android:onClick="onCompliance"
+                    android:paddingBottom="0dp" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/compliance"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="compliance"
+                        android:textColor="#4B0082"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

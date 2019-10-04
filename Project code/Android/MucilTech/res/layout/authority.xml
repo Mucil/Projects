@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:background="#CD1076" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CD1076"
+        >
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+       
+        android:layout_marginBottom="5dp" >
+
+        <Button
+            android:id="@+id/offers"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_style"
+            android:text="Offers"
+            android:textColor="#F0F8FF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/offerWithdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_style"
+            android:text="Offer Withdraw"
+            android:textColor="#F0F8FF"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout5"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/addProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_style"
+            android:text="Add Product"
+            android:textColor="#F0F8FF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/reviewProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_style"
+            android:text="Review Product"
+            android:textColor="#F0F8FF"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/orders"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_style"
+            android:text="Orders"
+            android:textColor="#F0F8FF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/sales"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_style"
+            android:text="Sales"
+            android:textColor="#F0F8FF"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/addBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_style"
+            android:text="Add Branch"
+            android:textColor="#F0F8FF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/reviewBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/btn_style"
+            android:text="Review Branch"
+            android:textColor="#F0F8FF"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/muciltech" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="MUCILTECH"
+        android:textColor="#FFFF00"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
